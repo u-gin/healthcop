@@ -18,4 +18,5 @@ class Colours {
   static Color tileIndicatorColor = colorFromHex('#F5F6F9');
   static Color tileTextColor = colorFromHex('#0C0B27');
   static Color appbarColor = colorFromHex('#EEF0F8');
+  static Color appbarColor2 = colorFromHex('#EEF0F8');
 }

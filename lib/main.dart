@@ -70,8 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: CustomPaint(
                     size: Size(
                       width,
-                      (width * 0.55).toDouble(),
-                    ), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                      (width * 0.55),
+                    ),
                     painter: RPSCustomPainter(),
                   ),
                 ),

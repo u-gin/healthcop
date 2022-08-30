@@ -6,7 +6,7 @@ class RPSCustomPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     Paint paint0 = Paint()
       ..color = Colours.appbarColor
-      ..style = PaintingStyle.stroke
+      ..style = PaintingStyle.fill
       ..strokeWidth = 1;
 
     Path path0 = Path();

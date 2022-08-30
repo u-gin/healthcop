@@ -4,6 +4,8 @@ import 'package:myhealthcop/button_template.dart';
 import 'package:myhealthcop/colours.dart';
 import 'package:myhealthcop/timeline_template.dart';
 
+import 'appbar_custom_painter.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -49,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
+    print(height);
 
     return Scaffold(
       appBar: PreferredSize(
@@ -64,9 +67,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: height * 0.3,
                 child: FittedBox(
                   fit: BoxFit.fill,
-                  child: Image.asset(
-                    "assets/images/appbarr.png",
-                    color: Colours.appbarColor,
+                  child: CustomPaint(
+                    size: Size(
+                      width,
+                      (width * 0.55).toDouble(),
+                    ), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                    painter: RPSCustomPainter(),
                   ),
                 ),
               ),

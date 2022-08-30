@@ -33,7 +33,7 @@ class ButtonTemplate extends StatelessWidget {
             color: Colours.previewButtonColor.withOpacity(0.5),
             spreadRadius: 5,
             blurRadius: 3,
-            offset: const Offset(0, 4), // changes position of shadow
+            offset: const Offset(0, 4),
           ),
         ],
       ),

@@ -88,16 +88,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Icon(Icons.arrow_back),
+                      Icon(
+                        Icons.arrow_back,
+                        color:
+                            imageFile == null ? Colours.black : Colours.white,
+                      ),
                       Text(
                         'New Class',
                         style: TextStyle(
                           fontSize: 18.0,
-                          color: Colours.black,
+                          color:
+                              imageFile == null ? Colours.black : Colours.white,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      const Icon(Icons.more_vert),
+                      Icon(
+                        Icons.more_vert,
+                        color:
+                            imageFile == null ? Colours.black : Colours.white,
+                      ),
                     ],
                   ),
                 ),
